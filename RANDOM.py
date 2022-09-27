@@ -120,7 +120,6 @@ def uaku2():
             ua.write(un+'\n')
         ua=open('.user-agents.txt','r').read().splitlines
 
-	except:
 		a=requests.get('https://github.com/TobiPHcheat/F-7/blob/main/approved.txt').text
 		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
